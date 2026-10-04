@@ -18,14 +18,19 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item BACON = registerItem("bacon_ingredient",
-            properties -> new Item(properties.food(ModFoods.BACON,ModFoods.BACON_CONSUMABLE)));
+            properties -> new Item(properties.food(ModFoods.BACON,ModFoods.BACON_CONSUME)));
     public static final Item RICE_SHOOT = registerItem("rice_shoot",
             properties -> new PlaceOnWaterBlockItem(ModBlocks.RICE_CROP, properties.useItemDescriptionPrefix()));
-    public static final Item LOOSE_RICE = registerItem("loose_rice", Item::new);
-    public static final Item COOKED_RICE_BOWL = registerItem("cooked_rice_bowl", Item::new);
-    public static final Item UNCLEAN_RICE_BOWL = registerItem("unclean_rice_bowl", Item::new);
-    public static final Item CLEAN_RICE_BOWL = registerItem("clean_rice_bowl", Item::new);
-    public static final Item BACONRICE_BOWL = registerItem("baconrice_bowl", Item::new);
+    public static final Item LOOSE_RICE = registerItem("loose_rice",
+            properties -> new Item(properties.food(ModFoods.UNCLEAN_RICE,ModFoods.UNCLEAN_RICE_CONSUME)));
+    public static final Item COOKED_RICE_BOWL = registerItem("cooked_rice_bowl",
+            properties -> new Item(properties.food(ModFoods.COOKED_RICE,ModFoods.COOKED_RICE_CONSUME)));
+    public static final Item UNCLEAN_RICE_BOWL = registerItem("unclean_rice_bowl",
+            properties -> new Item(properties.food(ModFoods.UNCLEAN_RICE,ModFoods.UNCLEAN_RICE_CONSUME)));
+    public static final Item CLEAN_RICE_BOWL = registerItem("clean_rice_bowl",
+            properties -> new Item(properties.food(ModFoods.CLEAN_RICE,ModFoods.CLEAN_RICE_CONSUME)));
+    public static final Item BACONRICE_BOWL = registerItem("baconrice_bowl",
+            properties -> new Item(properties.food(ModFoods.COOKED_BACON_RICE,ModFoods.COOKED_BACON_RICE_CONSUME)));
     public static final Item KNIFE = registerItem("knife", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
