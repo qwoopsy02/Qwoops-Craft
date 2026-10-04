@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "mod.qwoopscraft.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ExampleMixin",
+		"RiceBowlItemEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

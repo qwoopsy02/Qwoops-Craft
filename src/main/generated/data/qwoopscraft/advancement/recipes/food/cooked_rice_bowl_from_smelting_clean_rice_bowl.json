@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clean_rice_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:clean_rice_bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:cooked_rice_bowl_from_smelting_clean_rice_bowl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_clean_rice_bowl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:cooked_rice_bowl_from_smelting_clean_rice_bowl"
+    ]
+  }
+}

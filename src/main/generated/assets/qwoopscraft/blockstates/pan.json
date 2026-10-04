@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "qwoopscraft:block/pan",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "qwoopscraft:block/pan"
+    },
+    "facing=south": {
+      "model": "qwoopscraft:block/pan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "qwoopscraft:block/pan",
+      "y": 270
+    }
+  }
+}
