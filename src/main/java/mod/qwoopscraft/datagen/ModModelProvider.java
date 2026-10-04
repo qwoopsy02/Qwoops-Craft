@@ -34,7 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.UNCLEAN_RICE_BOWL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CLEAN_RICE_BOWL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.LOOSE_RICE, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.BACONRICE_BOWL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BACON_RICE_BOWL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.KNIFE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.COOKED_RICE_BOWL, ModelTemplates.FLAT_ITEM);
     }

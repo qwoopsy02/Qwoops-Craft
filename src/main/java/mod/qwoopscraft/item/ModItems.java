@@ -29,7 +29,7 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.UNCLEAN_RICE,ModFoods.UNCLEAN_RICE_CONSUME)));
     public static final Item CLEAN_RICE_BOWL = registerItem("clean_rice_bowl",
             properties -> new Item(properties.food(ModFoods.CLEAN_RICE,ModFoods.CLEAN_RICE_CONSUME)));
-    public static final Item BACONRICE_BOWL = registerItem("baconrice_bowl",
+    public static final Item BACON_RICE_BOWL = registerItem("bacon_rice_bowl",
             properties -> new Item(properties.food(ModFoods.COOKED_BACON_RICE,ModFoods.COOKED_BACON_RICE_CONSUME)));
     public static final Item KNIFE = registerItem("knife", Item::new);
 

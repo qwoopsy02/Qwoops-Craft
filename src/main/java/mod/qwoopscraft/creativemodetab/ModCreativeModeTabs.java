@@ -24,7 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CLEAN_RICE_BOWL);
                         output.accept(ModItems.UNCLEAN_RICE_BOWL);
                         output.accept(ModItems.COOKED_RICE_BOWL);
-                        output.accept(ModItems.BACONRICE_BOWL);
+                        output.accept(ModItems.BACON_RICE_BOWL);
                         output.accept(ModItems.LOOSE_RICE);
                         output.accept(ModItems.KNIFE);
 
