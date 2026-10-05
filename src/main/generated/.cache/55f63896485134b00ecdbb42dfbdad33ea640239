@@ -1,7 +1,8 @@
 // 26.3	-999999999-01-01T00:00:00	qwoopscraft/Model Definitions
 16032b873a75c80f6a620b6cbf8639140f6ba50f assets/qwoopscraft/blockstates/pan.json
 1f88f1a976269092d439b98b3e88df986ef7c739 assets/qwoopscraft/blockstates/rice_crop.json
-5d34297ff9adfb100e37e7b80537ed032aa0f693 assets/qwoopscraft/items/bacon_ingredient.json
+36ebf40d5fb94bde3a8500c6b2d403f6cbaf7b17 assets/qwoopscraft/items/bacon.json
+8b3bbaaf302adb526e30c0b0d744d46d058b469a assets/qwoopscraft/items/bacon_raw.json
 a71d688a5ddbd5a39546e2f2eb754da2808389b0 assets/qwoopscraft/items/bacon_rice_bowl.json
 f985808bd4b49f5f105fefffbe2f148f74434a21 assets/qwoopscraft/items/clean_rice_bowl.json
 82a42d2bd07d0894d836351f68b4ff75b0448210 assets/qwoopscraft/items/cooked_rice_bowl.json
@@ -18,7 +19,8 @@ f3d7090d2d5cc89c8fb9ba3c3130305da9a836c4 assets/qwoopscraft/models/block/rice_cr
 53c3dd16c74ed4fe192b2442c876c89dd7a7a827 assets/qwoopscraft/models/block/rice_crop_stage5.json
 e31683c164161f444f30dcf285bc00d7fb258d74 assets/qwoopscraft/models/block/rice_crop_stage6.json
 d5d0bdcffba378930d19f58694ab7b3c51cd62a7 assets/qwoopscraft/models/block/rice_crop_stage7.json
-7a62db80a9804dcc99390727fbc1f0d01f5abf5b assets/qwoopscraft/models/item/bacon_ingredient.json
+c125c0955c1336561c55db9a63120429fc423c77 assets/qwoopscraft/models/item/bacon.json
+5b05b40243c78c0ddda066dd6126bb850da432cb assets/qwoopscraft/models/item/bacon_raw.json
 316f3415008780188ad3eab17aeb965910502c4e assets/qwoopscraft/models/item/bacon_rice_bowl.json
 ab8a8163cd5aa9844406763a76a88f9a3cbf4da7 assets/qwoopscraft/models/item/clean_rice_bowl.json
 48c78662286f15636cded4e3c4e44caca8915976 assets/qwoopscraft/models/item/cooked_rice_bowl.json

@@ -2,6 +2,7 @@ package mod.qwoopscraft;
 
 import mod.qwoopscraft.block.ModBlocks;
 import mod.qwoopscraft.creativemodetab.ModCreativeModeTabs;
+import mod.qwoopscraft.crafting.KnifePreservingShapelessRecipe;
 import mod.qwoopscraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,6 +21,7 @@ public class qwoopscraft implements ModInitializer {
 		ModCreativeModeTabs.RegisterModCreativeModeTabs();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		KnifePreservingShapelessRecipe.register();
 	}
 
 	public static Identifier id(String path) {

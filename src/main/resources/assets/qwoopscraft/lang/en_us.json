@@ -1,12 +1,13 @@
 {
-  "item.qwoopscraft.bacon_ingredient"    : "Bacon",
+  "item.qwoopscraft.bacon"               : "Bacon",
+  "item.qwoopscraft.bacon_raw"           : "Raw Bacon",
   "block.qwoopscraft.pan"                : "Pan",
   "item.qwoopscraft.rice_shoot"          : "Rice Shoot",
   "item.qwoopscraft.loose_rice"          : "Uncooked Loose Rice",
   "item.qwoopscraft.unclean_rice_bowl"   : "Unclean Rice Bowl",
   "item.qwoopscraft.clean_rice_bowl"     : "Clean Rice Bowl",
   "item.qwoopscraft.cooked_rice_bowl"    : "Cooked Rice Bowl",
-  "item.qwoopscraft.baconrice_bowl"      : "Bacon & Rice Bowl",
+  "item.qwoopscraft.bacon_rice_bowl"      : "Bacon & Rice Bowl",
   "item.qwoopscraft.knife"               : "Knife",
   "creativemodetab.qwoopscraft.mod_items": "Qwoops-Craft"
 }

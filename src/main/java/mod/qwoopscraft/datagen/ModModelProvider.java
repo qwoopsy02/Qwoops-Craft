@@ -31,6 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.BACON, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BACON_RAW, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.UNCLEAN_RICE_BOWL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CLEAN_RICE_BOWL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.LOOSE_RICE, ModelTemplates.FLAT_ITEM);

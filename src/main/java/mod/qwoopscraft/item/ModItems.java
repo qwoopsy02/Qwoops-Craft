@@ -12,13 +12,16 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PlaceOnWaterBlockItem;
+import net.minecraft.world.item.ToolMaterial;
 
 import java.util.function.Function;
 
 
 public class ModItems {
-    public static final Item BACON = registerItem("bacon_ingredient",
+    public static final Item BACON = registerItem("bacon",
             properties -> new Item(properties.food(ModFoods.BACON,ModFoods.BACON_CONSUME)));
+    public static final Item BACON_RAW = registerItem("bacon_raw",
+            properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
     public static final Item RICE_SHOOT = registerItem("rice_shoot",
             properties -> new PlaceOnWaterBlockItem(ModBlocks.RICE_CROP, properties.useItemDescriptionPrefix()));
     public static final Item LOOSE_RICE = registerItem("loose_rice",
@@ -31,7 +34,8 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.CLEAN_RICE,ModFoods.CLEAN_RICE_CONSUME)));
     public static final Item BACON_RICE_BOWL = registerItem("bacon_rice_bowl",
             properties -> new Item(properties.food(ModFoods.COOKED_BACON_RICE,ModFoods.COOKED_BACON_RICE_CONSUME)));
-    public static final Item KNIFE = registerItem("knife", Item::new);
+    public static final Item KNIFE = registerItem("knife",
+            properties -> new Item(properties.sword(ToolMaterial.IRON, 1, -2f).durability(64)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         Identifier id = Identifier.fromNamespaceAndPath(qwoopscraft.MOD_ID, name);
@@ -43,9 +47,7 @@ public class ModItems {
     public static void registerModItems() {
         qwoopscraft.LOGGER.info("REGISTERING ITEMS " + qwoopscraft.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
-            output.accept(BACON);
-            output.accept(RICE_SHOOT);
-        });
+        //CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
+        //});
     }
 }
