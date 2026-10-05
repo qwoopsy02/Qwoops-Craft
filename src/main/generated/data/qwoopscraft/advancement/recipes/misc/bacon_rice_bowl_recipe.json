@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bacon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:bacon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cooked_rice_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:cooked_rice_bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:bacon_rice_bowl_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bacon",
+      "has_cooked_rice_bowl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:bacon_rice_bowl_recipe"
+    ]
+  }
+}

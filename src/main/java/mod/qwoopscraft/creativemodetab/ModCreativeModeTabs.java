@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LOOSE_RICE);
                         output.accept(ModItems.KNIFE);
                         output.accept(ModItems.BACON_RAW);
+                        output.accept(ModItems.CHEESE);
 
                     }).build());
 

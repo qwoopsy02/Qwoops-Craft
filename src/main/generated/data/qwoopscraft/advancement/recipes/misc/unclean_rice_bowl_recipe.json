@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_loose_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:loose_rice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:unclean_rice_bowl_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_loose_rice",
+      "has_bowl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:unclean_rice_bowl_recipe"
+    ]
+  }
+}

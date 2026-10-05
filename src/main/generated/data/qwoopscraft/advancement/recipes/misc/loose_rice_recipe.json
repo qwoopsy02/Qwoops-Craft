@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rice_shoot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:rice_shoot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:loose_rice_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rice_shoot",
+      "has_knife"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:loose_rice_recipe"
+    ]
+  }
+}

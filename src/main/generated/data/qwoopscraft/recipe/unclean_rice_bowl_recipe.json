@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rice",
+  "ingredients": [
+    "qwoopscraft:loose_rice",
+    "minecraft:bowl"
+  ],
+  "result": {
+    "count": 2,
+    "id": "qwoopscraft:unclean_rice_bowl"
+  }
+}

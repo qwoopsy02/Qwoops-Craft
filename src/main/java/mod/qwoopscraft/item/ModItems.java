@@ -9,6 +9,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PlaceOnWaterBlockItem;
@@ -36,6 +37,19 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.COOKED_BACON_RICE,ModFoods.COOKED_BACON_RICE_CONSUME)));
     public static final Item KNIFE = registerItem("knife",
             properties -> new Item(properties.sword(ToolMaterial.IRON, 1, -2f).durability(64)));
+    public static final Item MIXER = registerItem("mixer",
+            properties -> new Item(properties.durability(64)));
+    public static final Item CHEESE = registerItem("cheese",
+            properties -> new Item(properties.food(ModFoods.CHEESE,ModFoods.CHEESE_CONSUME)));
+    public static final Item PATTY = registerItem("patty",
+            properties -> new Item(properties.food(ModFoods.BACON,ModFoods.BACON_CONSUME)));
+    public static final Item PATTY_RAW = registerItem("patty",
+            properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
+    public static final Item BURGER = registerItem("patty",
+            properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
+    public static final Item BURGER_CHEESE = registerItem("patty",
+            properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
+
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         Identifier id = Identifier.fromNamespaceAndPath(qwoopscraft.MOD_ID, name);

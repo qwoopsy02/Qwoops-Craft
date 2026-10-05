@@ -1,0 +1,12 @@
+{
+  "type": "qwoopscraft:knife_preserving_shapeless",
+  "group": "rice",
+  "ingredients": [
+    "qwoopscraft:rice_shoot",
+    "qwoopscraft:knife"
+  ],
+  "result": {
+    "count": 2,
+    "id": "qwoopscraft:loose_rice"
+  }
+}

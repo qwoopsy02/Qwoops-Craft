@@ -1,5 +1,6 @@
 package mod.qwoopscraft.datagen;
 
+import mod.qwoopscraft.block.ModBlocks;
 import mod.qwoopscraft.crafting.KnifePreservingShapelessRecipe;
 import mod.qwoopscraft.item.ModItems;
 import mod.qwoopscraft.qwoopscraft;
@@ -41,6 +42,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 List<ItemLike> RICE_SMELTABLES = List.of(ModItems.CLEAN_RICE_BOWL);
+                List<ItemLike> BACON_SMELTABLES = List.of(ModItems.BACON_RAW);
                 RecipeOutput knifePreservingOutput = new RecipeOutput() {
                     @Override
                     public void accept(net.minecraft.resources.ResourceKey<Recipe<?>> key, Recipe<?> recipe,
@@ -70,6 +72,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 };
 
                 oreSmelting(RICE_SMELTABLES, RecipeCategory.FOOD, CookingBookCategory.FOOD, ModItems.COOKED_RICE_BOWL, 0.1f, 60, "rice");
+                oreSmelting(BACON_SMELTABLES, RecipeCategory.FOOD, CookingBookCategory.FOOD, ModItems.BACON, 0.1f, 60, "bacon");
                 shapeless(RecipeCategory.MISC, ModItems.BACON_RICE_BOWL, 1)
                         .requires(ModItems.BACON)
                         .requires(ModItems.COOKED_RICE_BOWL)
@@ -85,6 +88,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("rice")
                         .save(knifePreservingOutput, ResourceKey.create(
                                 Registries.RECIPE, qwoopscraft.id("loose_rice_recipe")));
+                shapeless(RecipeCategory.MISC, ModItems.BACON_RAW, 2)
+                        .requires(Items.PORKCHOP)
+                        .requires(ModItems.KNIFE)
+                        .unlockedBy(getHasName(Items.PORKCHOP), has(Items.PORKCHOP))
+                        .unlockedBy(getHasName(ModItems.KNIFE), has(ModItems.KNIFE))
+                        .group("rice")
+                        .save(knifePreservingOutput, ResourceKey.create(
+                                Registries.RECIPE, qwoopscraft.id("raw_bacon_recipe")));
+                shapeless(RecipeCategory.MISC, ModItems.PATTY_RAW, 2)
+                        .requires(Items.BEEF)
+                        .requires(ModItems.KNIFE)
+                        .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
+                        .unlockedBy(getHasName(ModItems.KNIFE), has(ModItems.KNIFE))
+                        .group("rice")
+                        .save(knifePreservingOutput, ResourceKey.create(
+                                Registries.RECIPE, qwoopscraft.id("patty_recipe")));
+                shapeless(RecipeCategory.MISC, ModItems.BACON_RICE_BOWL, 1)
+                        .requires(ModItems.BACON)
+                        .requires(ModItems.COOKED_RICE_BOWL)
+                        .unlockedBy(getHasName(ModItems.BACON), has(ModItems.BACON))
+                        .unlockedBy(getHasName(ModItems.COOKED_RICE_BOWL), has(ModItems.COOKED_RICE_BOWL))
+                        .group("rice")
+                        .save(output, "bacon_rice_bowl_recipe");
+                shapeless(RecipeCategory.MISC, ModItems.CHEESE, 2)
+                        .requires(Items.MILK_BUCKET)
+                        .requires(ModItems.MIXER)
+                        .unlockedBy(getHasName(Items.MILK_BUCKET), has(Items.MILK_BUCKET))
+                        .unlockedBy(getHasName(ModItems.MIXER), has(ModItems.MIXER))
+                        .group("cheese")
+                        .save(knifePreservingOutput, ResourceKey.create(
+                                Registries.RECIPE, qwoopscraft.id("cheese_recipe")));
                 shapeless(RecipeCategory.MISC, ModItems.UNCLEAN_RICE_BOWL, 2)
                         .requires(ModItems.LOOSE_RICE)
                         .requires(Items.BOWL)
@@ -92,6 +126,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.BOWL), has(Items.BOWL))
                         .group("rice")
                         .save(output, "unclean_rice_bowl_recipe");
+                shaped(RecipeCategory.MISC, ModItems.KNIFE)
+                        .pattern("I  ")
+                        .pattern(" T ")
+                        .pattern("  S")
+                        .define('I',Items.IRON_INGOT)
+                        .define('T',Items.STRING)
+                        .define('S',Items.STICK)
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .group("tools")
+                        .save(output);
 
             }
         };

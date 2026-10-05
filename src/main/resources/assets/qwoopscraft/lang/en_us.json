@@ -7,7 +7,9 @@
   "item.qwoopscraft.unclean_rice_bowl"   : "Unclean Rice Bowl",
   "item.qwoopscraft.clean_rice_bowl"     : "Clean Rice Bowl",
   "item.qwoopscraft.cooked_rice_bowl"    : "Cooked Rice Bowl",
-  "item.qwoopscraft.bacon_rice_bowl"      : "Bacon & Rice Bowl",
+  "item.qwoopscraft.bacon_rice_bowl"     : "Bacon & Rice Bowl",
+  "item.qwoopscraft.cheese"              : "Cheese",
   "item.qwoopscraft.knife"               : "Knife",
+  "item.qwoopscraft.mixer"               : "Mixer",
   "creativemodetab.qwoopscraft.mod_items": "Qwoops-Craft"
 }

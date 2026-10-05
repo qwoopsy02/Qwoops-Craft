@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_porkchop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:porkchop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:raw_bacon_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_porkchop",
+      "has_knife"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:raw_bacon_recipe"
+    ]
+  }
+}

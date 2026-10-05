@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rice",
+  "ingredients": [
+    "qwoopscraft:bacon",
+    "qwoopscraft:cooked_rice_bowl"
+  ],
+  "result": {
+    "id": "qwoopscraft:bacon_rice_bowl"
+  }
+}
