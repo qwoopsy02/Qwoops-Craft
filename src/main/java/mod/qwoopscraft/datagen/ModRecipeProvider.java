@@ -32,6 +32,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 List<ItemLike> RICE_SMELTABLES = List.of(ModItems.CLEAN_RICE_BOWL);
 
                 oreSmelting(RICE_SMELTABLES, RecipeCategory.FOOD, CookingBookCategory.FOOD, ModItems.COOKED_RICE_BOWL, 0.1f, 60, "rice");
+
             }
         };
     }

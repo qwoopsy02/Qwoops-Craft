@@ -17,6 +17,12 @@
     },
     "age=5": {
       "model": "qwoopscraft:block/rice_crop_stage5"
+    },
+    "age=6": {
+      "model": "qwoopscraft:block/rice_crop_stage6"
+    },
+    "age=7": {
+      "model": "qwoopscraft:block/rice_crop_stage7"
     }
   }
 }

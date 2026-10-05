@@ -11,9 +11,9 @@ public class ModFoods {
     public static final FoodProperties BACON = (new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8F).build();
     public static final Consumable BACON_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.05f)).build();
     public static final FoodProperties UNCLEAN_RICE = (new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8F).build();
-    public static final Consumable UNCLEAN_RICE_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.05f)).build();
+    public static final Consumable UNCLEAN_RICE_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.15f)).build();
     public static final FoodProperties CLEAN_RICE = (new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8F).build();
-    public static final Consumable CLEAN_RICE_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.05f)).build();
+    public static final Consumable CLEAN_RICE_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.15f)).build();
     public static final FoodProperties COOKED_RICE = (new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8F).build();
     public static final Consumable COOKED_RICE_CONSUME = Consumables.defaultFood().consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SATURATION,30), 0.05f)).build();
     public static final FoodProperties COOKED_BACON_RICE = (new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8F).build();

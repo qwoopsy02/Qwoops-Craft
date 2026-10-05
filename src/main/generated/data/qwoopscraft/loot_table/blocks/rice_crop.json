@@ -15,7 +15,7 @@
                 "type": "minecraft:match_block",
                 "blocks": "qwoopscraft:rice_crop",
                 "state": {
-                  "age": "5"
+                  "age": "7"
                 }
               },
               "name": "qwoopscraft:rice_shoot"
@@ -34,7 +34,7 @@
         "type": "minecraft:match_block",
         "blocks": "qwoopscraft:rice_crop",
         "state": {
-          "age": "5"
+          "age": "7"
         }
       },
       "entries": [

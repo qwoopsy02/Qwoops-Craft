@@ -19,8 +19,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
         dropSelf(ModBlocks.PAN);
-        this.add(ModBlocks.RICE_CROP, this.createCropDrops(ModBlocks.RICE_CROP, ModItems.RICE_SHOOT, ModItems.RICE_SHOOT,
-                MatchBlock.blockMatches(blocks, ModBlocks.RICE_CROP,
-                        StatePropertiesPredicate.Builder.properties().hasProperty(rice.AGE, rice.MAX_AGE))));
+        var fullyGrown = MatchBlock.blockMatches(blocks, ModBlocks.RICE_CROP,
+                StatePropertiesPredicate.Builder.properties().hasProperty(rice.AGE, rice.MAX_AGE));
+        this.add(ModBlocks.RICE_CROP,
+                this.createCropDrops(ModBlocks.RICE_CROP, ModItems.RICE_SHOOT, ModItems.RICE_SHOOT, fullyGrown));
     }
 }

@@ -25,7 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
                 MultiVariantGenerator.dispatch(ModBlocks.PAN, BlockModelGenerators.plainVariant(model))
                         .with(BlockModelGenerators.ROTATION_HORIZONTAL_FACING));
         blockModelGenerators.registerSimpleItemModel(ModBlocks.PAN, model);
-        blockModelGenerators.createCropBlock(ModBlocks.RICE_CROP, rice.AGE, 0, 1, 2, 3, 4, 5);
+        blockModelGenerators.createCropBlock(ModBlocks.RICE_CROP, rice.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
     }
 
     @Override
