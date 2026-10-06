@@ -1,0 +1,12 @@
+{
+  "type": "qwoopscraft:knife_preserving_shapeless",
+  "group": "burger",
+  "ingredients": [
+    "minecraft:beef",
+    "qwoopscraft:knife"
+  ],
+  "result": {
+    "count": 2,
+    "id": "qwoopscraft:patty_raw"
+  }
+}

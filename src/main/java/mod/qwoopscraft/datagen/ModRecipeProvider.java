@@ -101,16 +101,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModItems.KNIFE)
                         .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
                         .unlockedBy(getHasName(ModItems.KNIFE), has(ModItems.KNIFE))
-                        .group("rice")
+                        .group("burger")
                         .save(knifePreservingOutput, ResourceKey.create(
                                 Registries.RECIPE, qwoopscraft.id("patty_recipe")));
-                shapeless(RecipeCategory.MISC, ModItems.BACON_RICE_BOWL, 1)
-                        .requires(ModItems.BACON)
-                        .requires(ModItems.COOKED_RICE_BOWL)
-                        .unlockedBy(getHasName(ModItems.BACON), has(ModItems.BACON))
-                        .unlockedBy(getHasName(ModItems.COOKED_RICE_BOWL), has(ModItems.COOKED_RICE_BOWL))
-                        .group("rice")
-                        .save(output, "bacon_rice_bowl_recipe");
                 shapeless(RecipeCategory.MISC, ModItems.CHEESE, 2)
                         .requires(Items.MILK_BUCKET)
                         .requires(ModItems.MIXER)
@@ -119,7 +112,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("cheese")
                         .save(knifePreservingOutput, ResourceKey.create(
                                 Registries.RECIPE, qwoopscraft.id("cheese_recipe")));
-                shapeless(RecipeCategory.MISC, ModItems.UNCLEAN_RICE_BOWL, 2)
+                shapeless(RecipeCategory.MISC, ModItems.UNCLEAN_RICE_BOWL, 1)
                         .requires(ModItems.LOOSE_RICE)
                         .requires(Items.BOWL)
                         .unlockedBy(getHasName(ModItems.LOOSE_RICE), has(ModItems.LOOSE_RICE))
@@ -136,6 +129,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                         .group("tools")
                         .save(output);
+                shaped(RecipeCategory.MISC, ModItems.BURGER)
+                        .pattern(" B ")
+                        .pattern(" P ")
+                        .pattern(" B ")
+                        .define('B',Items.BREAD)
+                        .define('P',ModItems.PATTY)
+                        .unlockedBy(getHasName(ModItems.PATTY), has(ModItems.PATTY))
+                        .save(output, "burger_recipe");
+                shapeless(RecipeCategory.MISC, ModItems.BURGER_CHEESE, 1)
+                        .requires(ModItems.BURGER)
+                        .requires(ModItems.CHEESE)
+                        .unlockedBy(getHasName(ModItems.BURGER), has(ModItems.BURGER))
+                        .group("burger")
+                        .save(output, "burger_cheese_recipe");
+
 
             }
         };

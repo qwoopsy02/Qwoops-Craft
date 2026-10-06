@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_beef": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:beef"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "qwoopscraft:knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "qwoopscraft:patty_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_beef",
+      "has_knife"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qwoopscraft:patty_recipe"
+    ]
+  }
+}

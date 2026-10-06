@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "id": "qwoopscraft:rice_crop",
+    "properties": {
+      "age": "0"
+    }
+  }
+}

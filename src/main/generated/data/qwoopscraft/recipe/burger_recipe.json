@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": "minecraft:bread",
+    "P": "qwoopscraft:patty"
+  },
+  "pattern": [
+    " B ",
+    " P ",
+    " B "
+  ],
+  "result": {
+    "id": "qwoopscraft:burger"
+  }
+}

@@ -43,11 +43,11 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.CHEESE,ModFoods.CHEESE_CONSUME)));
     public static final Item PATTY = registerItem("patty",
             properties -> new Item(properties.food(ModFoods.BACON,ModFoods.BACON_CONSUME)));
-    public static final Item PATTY_RAW = registerItem("patty",
+    public static final Item PATTY_RAW = registerItem("patty_raw",
             properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
-    public static final Item BURGER = registerItem("patty",
+    public static final Item BURGER = registerItem("burger",
             properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
-    public static final Item BURGER_CHEESE = registerItem("patty",
+    public static final Item BURGER_CHEESE = registerItem("burger_cheese",
             properties -> new Item(properties.food(ModFoods.BACON_RAW,ModFoods.BACON_RAW_CONSUME)));
 
 

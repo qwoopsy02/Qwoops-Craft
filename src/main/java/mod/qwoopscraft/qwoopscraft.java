@@ -4,6 +4,7 @@ import mod.qwoopscraft.block.ModBlocks;
 import mod.qwoopscraft.creativemodetab.ModCreativeModeTabs;
 import mod.qwoopscraft.crafting.KnifePreservingShapelessRecipe;
 import mod.qwoopscraft.item.ModItems;
+import mod.qwoopscraft.worldgen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -22,6 +23,7 @@ public class qwoopscraft implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		KnifePreservingShapelessRecipe.register();
+		ModWorldGeneration.register();
 	}
 
 	public static Identifier id(String path) {
