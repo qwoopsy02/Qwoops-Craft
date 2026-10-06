@@ -18,19 +18,9 @@ public class ModCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BACON))
                     .title(Component.translatable("creativemodetab.qwoopscraft.mod_items"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModItems.BACON);
-                        output.accept(ModBlocks.PAN);
-                        output.accept(ModItems.RICE_SHOOT);
-                        output.accept(ModItems.CLEAN_RICE_BOWL);
-                        output.accept(ModItems.UNCLEAN_RICE_BOWL);
-                        output.accept(ModItems.COOKED_RICE_BOWL);
-                        output.accept(ModItems.BACON_RICE_BOWL);
-                        output.accept(ModItems.LOOSE_RICE);
-                        output.accept(ModItems.KNIFE);
-                        output.accept(ModItems.BACON_RAW);
-                        output.accept(ModItems.CHEESE);
-
-                    }).build());
+                ModItems.ITEM_ALL.forEach(output::accept);
+                output.accept(ModBlocks.PAN);
+            }).build());
 
 
     public static void RegisterModCreativeModeTabs(){
